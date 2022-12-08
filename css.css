@@ -788,6 +788,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .gioithieu-content-header>div{
     font-size: 60px;
