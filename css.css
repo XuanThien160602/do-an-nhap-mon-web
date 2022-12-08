@@ -645,3 +645,150 @@ body{
 .xemay-product-logo-search-img>img{
     height: 100px;
 }
+/* //////////////////////////////////////////// */
+.xetai-fillter{
+    height: 30px;
+    width: 60%;
+    margin: 20px 105px;
+    display: flex;
+    justify-content: space-between;
+}
+.xetai-product-logo-search{
+    width: 4000px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.xetai-product-logo-search>div{
+    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+}
+.xetai-product-logo-search-img>img{
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+/* ///////////////////////////////////////////// */
+.users-content{
+    border-top: 1px solid;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.users-form{
+    height: 450px;
+    width: 500px;
+    padding: 100px 50px;
+    border-radius: 20px;
+    background-color: white;
+}
+.users-form-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.users-form-content-input{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 10px;
+}
+.users-form-content-input>img{
+    height: 30px;
+    border-radius: 10px;
+}
+.users-form-content-input>input{
+    height: 40px;
+    border: none;
+    width: 100%;
+}
+.users-form-xacnhan{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.users-form-dieukhoan{
+    margin-top: 20px;
+    text-align: center;
+}
+.users-form-dieukhoan>a{
+    color: black;
+    text-decoration: none;
+}
+.users-form-dieukhoan>a:hover,.users-form-dieukhoan>a:active,.users-form-dieukhoan>a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.users-form-Dangki{
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0 100px;
+}
+.users-form-Dangki>input{
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+.users-form-dangnhap{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: center;
+}
+.users-form-dangnhap>a{
+    text-decoration: none;
+    color: green;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+.users-form-dangnhap{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.users-form-dangbanxe{
+    height: 280px;
+    width: 500px;
+    padding: 100px 50px;
+    border-radius: 20px;
+    background-color: white;
+    flex-direction: column;
+}
+.users-form-luutaikhoan{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* ////////////////////////////////////////// */
+.gioithieu-content{
+    border-top: 1px solid;
+}
+.gioithieu-content-header{
+    background: url(images/background-gioithieu.jpg) no-repeat;
+    height: 538px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gioithieu-content-header>div{
+    font-size: 60px;
+}
