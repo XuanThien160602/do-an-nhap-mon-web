@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua Bán Xe Máy</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-header"><img src="images/logo.webp" alt=""></div>
+            <div class="menu-header">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png" alt=""><p>Trang chủ</p></a></li>
+                    <li><a href="muaoto.html"><img src="images/car.png" alt=""><p>Mua Ô Tô</p></a></li>
+                    <li><a href="muaxemay.html"><img src="images/motorbike.png" alt=""><p>Mua Xe Máy</p></a></li>
+                    <li><a href="muaxetai.html"><img src="images/trucks.png" alt=""><p>Mua Xe Tải</p></a></li>
+                    <li><a href="taikhoan.html"><img src="images/user.jfif" alt=""><p>Tài Khoản</p></a></li>
+                    <li><a href="dangbanxe.html" ><img src="images/banxe.jpg" alt=""><p class="xt-banxe">Đăng Bán Xe</p></a></li>
+                    <li><a href="gioithieu.html"><img src="" alt=""><p class="xt-gioithieu">Giới thiệu</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="oto-content">
+            <div class="oto-search">
+                <div class="timkiem">
+                    <input type="text" placeholder="Tìm tên xe, hãng xe, dòng xe..."">
+                </div>
+                <div class="khuvuc">
+                    <img src="images/diachi.png" alt="">
+                    <select name="khuvuc" id="khuvuc">
+                        <option value="Toanquoc" selected="selected">Toàn quốc</option>
+                        <option value="ha-noi">Hà Nội</option>
+                        <option value="ho-chi-minh">Hồ Chí Minh</option>
+                        <option value="an-giang">An Giang</option>
+                        <option value="ba-ria-vung-tau">Bà Rịa - Vũng Tàu</option>
+                        <option value="bac-giang">Bắc Giang</option>
+                        <option value="bac-kan">Bắc Kạn</option>
+                        <option value="bac-lieu">Bạc Liêu</option>
+                        <option value="bac-ninh">Bắc Ninh</option>
+                        <option value="ben-tre">Bến Tre</option>
+                        <option value="binh-dinh">Bình Định</option>
+                        <option value="binh-duong">Bình Dương</option>
+                        <option value="binh-phuoc">Bình Phước</option>
+                        <option value="binh-thuan">Bình Thuận</option>
+                        <option value="ca-mau">Cà Mau</option>
+                        <option value="can-tho">Cần Thơ</option>
+                        <option value="cao-bang">Cao Bằng</option>
+                        <option value="da-nang">Đà Nẵng</option>
+                        <option value="dak-lak">Đắk Lắk</option>
+                        <option value="dak-nong">Đắk Nông</option>
+                        <option value="dien-bien">Điên Biên</option>
+                        <option value="dong-nai">Đồng Nai</option>
+                        <option value="dong-thap">Đồng Tháp</option>
+                        <option value="gia-lai">Gia Lai</option>
+                        <option value="ha-giang">Hà Giang</option>
+                        <option value="ha-nam">Hà Nam</option>
+                        <option value="ha-tinh">Hà Tỉnh</option>
+                        <option value="hai-duong">Hải Dương</option>
+                        <option value="hai-phong">Hải Phong</option>
+                        <option value="hau-giang">Hậu Giang</option>
+                        <option value="hoa-binh">Hòa Bình</option>
+                        <option value="hung-yen">Hưng Yên</option>
+                        <option value="khanh-hoa">Khánh Hòa</option>
+                        <option value="kien-giang">Kiên Giang</option>
+                        <option value="kon-tum">Kon Tum</option>
+                        <option value="lai-chau">Lai Châu</option>
+                        <option value="lam-dong">Lâm Đồng</option>
+                        <option value="lang-son">Lạng Sơn</option>
+                        <option value="lao-cai">Lào Cai</option>
+                        <option value="long-an">Long An</option>
+                        <option value="nam-dinh">Nam Định</option>
+                        <option value="nghe-an">Nghệ An</option>
+                        <option value="ninh-binh">Ninh Bình</option>
+                        <option value="ninh-thuan">Ninh Thuận</option>
+                        <option value="phu-tho">Phú Thọ</option>
+                        <option value="phu-yen">Phú Yên</option>
+                        <option value="quang-binh">Quảng Bình</option>
+                        <option value="quang-nam">Quảng Nam</option>
+                        <option value="quang-ngai">Quảng Ngãi</option>
+                        <option value="quang-ninh">Quảng Ninh</option>
+                        <option value="quang-tri">Quảng Trị</option>
+                        <option value="soc-trang">Sóc Trăng</option>
+                        <option value="son-la">Sơn La</option>
+                        <option value="tay-ninh">Tây Ninh</option>
+                        <option value="thai-binh">Thái Bình</option>
+                        <option value="thai-nguyen">Thái Nguyên</option>
+                        <option value="thanh-hoa">Thanh Hóa</option>
+                        <option value="thua-thien-hue">Thừa Thiên Huế</option>
+                        <option value="tien-giang">Tiền Giang</option>
+                        <option value="tra-vinh">Trà Vinh</option>
+                        <option value="tuyen-quang">Tuyên Quang</option>
+                        <option value="vinh-long">Vĩnh Long</option>
+                        <option value="vinh-phuc">Vĩnh Phúc</option>
+                        <option value="yen-bai">Yên Bái</option>
+                    </select>
+                </div>
+                <div class="hangxe">
+                    <select name="hangxe" id="hangxe">
+                        <option value="Tat-ca" selected="selected">Tất cả</option>
+                        <option value="Yamaha">Yamaha</option>
+                        <option value="Honda">Honda</option>
+                        <option value="SYM">SYM</option>
+                        <option value="Vinfast">Vinfast</option>
+                        <option value="Kawasaki">Kawasaki</option>
+                        <option value="Ducati">Ducati</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="Piaggio">Piaggio</option>
+                        <option value="Brixton">Brixton</option>
+                        <option value="KTM">KTM</option>
+                        <option value="Peugeot">Peugeot</option>
+                        <option value="GPX">GPX</option>
+                        <option value="Benelli">Benelli</option>
+                        <option value="Harley-Davidson">Harley Davidson</option>
+                        <option value="Triumph">Triumph</option>
+                        <option value="Hang-khac">Hãng khác</option>
+                    </select>
+                </div>
+                <div class="btnTim"><input type="button" value="Tìm"></div>
+            </div>
+            <div class="xemay-fillter">
+                <div class="xemay-fillter-btn-gia">
+                    <select name="gia-xemay" id="gia-xemay" class="oto-fillter-select-option">
+                        <option value="Gia" selected="selected">Giá</option>
+                        <option value="Thap-Cao">Thấp->Cao</option>
+                        <option value="Cao-Thap">Cao->Thấp</option>
+                    </select>
+                </div>
+                <div class="xemay-fillter-btn-tinhtrang">
+                    <select name="tinhtrang-xemay" id="tinhtrang-xemay-xemay" class="oto-fillter-select-option">
+                        <option value="Tinh-trang" selected="selected">Tình trạng</option>
+                        <option value="Tat-ca">Tất cả</option>
+                        <option value="Xe-moi">Xe mới</option>
+                        <option value="Xe-cu">Xe cũ</option>
+                    </select>
+                </div>
+                <div class="xemay-fillter-btn-km">
+                    <select name="sokm-xemay" id="sokm-xemay" class="oto-fillter-select-option">
+                        <option value="so-km" selected="selected">Số km đã đi</option>
+                        <option value="0->4999">0->4999</option>
+                        <option value="5000->9999">5000->9999</option>
+                        <option value="10000->14999">10000->14999</option>
+                        <option value="15000->19999">15000->19999</option>
+                        <option value="20000->24999">20000->24999</option>
+                        <option value="25000-tro-len">25000 trở lên</option>
+                    </select>
+                </div>
+                <div class="xemay-fillter-btn-hopso">
+                    <select name="loaixe-xemay" id="loaixe-xemay" class="oto-fillter-select-option">
+                        <option value="Loai-xe" selected="selected">Loại xe</option>
+                        <option value="Tat-ca">Tất cả</option>
+                        <option value="Xe-ga">Xe ga</option>
+                        <option value="Xe-so">Xe số</option>
+                        <option value="Tay-con-Moto">Tay côn/ Moto</option>
+                    </select>
+                </div>
+                <div class="xemay-fillter-btn-dungtich">
+                    <select name="dungtich-xemay" id="dungtich-xemay" class="oto-fillter-select-option">
+                        <option value="Dung-tich" selected="selected">Dung tích</option>
+                        <option value="Duoi-50cc">Dưới 50cc</option>
+                        <option value="50-100cc">50-100cc</option>
+                        <option value="100-175cc">100-175cc</option>
+                        <option value="Tren-175cc">Trên 175cc</option>
+                        <option value="Khong-biet-ro">Không biết rõ</option>
+                    </select>
+                </div>
+                <div class="xemay-fillter-btn-loc">
+                    <img src="images/fillter.png" alt="">
+                    <input type="button" value="Lọc">
+                </div>
+            </div>
+            <div class="oto-product">
+                <div class="oto-product-title"><h2>Mua bán xe máy cũ giá rẻ chính chủ, Xe máy mới/ cũ chính hãng</h2></div>
+                <div class="oto-product-logo">
+                    <marquee direction="left" scrollamount="10" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate">
+                        <div class="xemay-product-logo-search">
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/10fefaee-09ab-4ae7-9129-7949d8edfaf8_honda.webp" alt="honda"></div><div>Honda</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/0041f8da-90b9-4a9e-9536-3c47611b6916_yamaha.webp" alt="yamaha"></div><div>Yamaha</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/9f09e7be-04f5-43c3-973a-4448fe0c6781_vinfast-logo.webp" alt="vinfast"></div><div>Vinfast</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/9fd30b0d-40db-4e4a-9f2f-66cb41ae2ce0_suzuki-logo.webp" alt="suzuki"></div><div>Suzuki</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/d87230d3-9089-4697-9e91-deac86e51f7f_pia.webp" alt="Piaggio"></div><div>Piaggio</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/338583c0-d45a-4f99-bdfd-152d8df907de_ka.webp" alt="Kawasaki"></div><div>Kawasaki</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/35a38e28-3a34-4733-82db-5cded4641b07_bmw-logo.webp" alt="bmw"></div><div>BMW</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/1d7a0788-a693-4c86-bceb-cdc22473e5a0_peugeot-logo.webp" alt="peugeot"></div><div>Peugeot</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/ba2b8f96-a53d-4de8-a4b3-bcf7a8182240_5.webp" alt="sym"></div><div>SYM</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/0b69a808-fcdc-4757-addd-f30b9dec638f_ducati.webp" alt="ducati"></div><div>Ducati</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/c04d06c2-4231-4a62-8830-9ed2e271a89a_35.webp" alt="brixton"></div><div>Brixton</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/d5621014-db36-41d7-9bf8-0fad1d77e3cf_kymco-logo.webp" alt="Kymco"></div><div>Kymco</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/7c66bea9-6c61-479d-94bc-39088737fef7_Ktm.webp" alt="ktm"></div><div>KTM</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/2ac6e30b-ea21-4ffe-b099-d0aac75b13a7_gpx-logo.webp" alt="gpx"></div><div>GPX</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/65b9938d-bf74-48e6-874d-e2663fa31750_benelli-logo.webp" alt="benelli"></div><div>Benelli</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/8cf62b39-2cda-4b62-87a9-93b492bae8a5_harley-davidson-logo.webp" alt="harley-davidson"></div><div>Harley Davidson</div></div>
+                            <div><div class="xemay-product-logo-search-img"><img src="images/logo/ba512713-3810-4ad4-ad34-d40455f2fe80_logo-triumph.webp" alt="triumph"></div><div>Triumph</div></div>
+                        </div>
+                    </marquee>
+                </div>
+                <div class="oto-product-banner">
+                    <img src="images/banner-thu-mua-oto-binh.jpg" alt="">
+                </div>
+                <div class="oto-product-content">
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Harley Davidson Fatboy 114Ci ABS 2020 Nguyên Bản Mới Chính Hãng</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">07/12/2022</div>
+                            <div class="oto-product-content-giatien">1.350.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/6d6d6073-74fb-4a99-a328-01931cc7f228_thumbnail_385x288_274565564_147656111040062_3224013947327233441_harleydavidsonfatboy.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Harley Davidson</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2019</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe mới</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>Khác</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay côn/ Moto</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Nguyễn Minh</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Ducati 899 Panigale 2021 Chính Hãng</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">06/12/2022</div>
+                            <div class="oto-product-content-giatien">1.050.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/35152381-38a3-4849-bf5b-bed4a6a2b3e2_thumbnail_385x288_274572692_147646461041027_702819478228354993_ducati899.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Ducati</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2020</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe mới</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>899 Panegale</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay côn/ Moto</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Huỳnh Hiếu</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Triumph Bonneville T100 Bản Mới Chính Hãng</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">06/12/2022</div>
+                            <div class="oto-product-content-giatien">410.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/2e21f5d6-9f41-41a6-93ce-d8a85376aeb7_thumbnail_385x288_141525237_1097424267397456_5247109704469139090_triumpgbonnevilleT100.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Triumph</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2022</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe mới</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>Bonneville T100</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay côn/ Moto</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Minh Tâm</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Triumph Bonneville T120 Nguyên Bản Mới Chính Hãng</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">05/12/2022</div>
+                            <div class="oto-product-content-giatien">580.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/c3123e3d-b926-4860-a914-c9d751f79da3_thumbnail_385x288_274603461_147647534374253_6965384367038386047_triumphbonnevillet120.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Triumph</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2021</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe mới</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>Bonneville T120</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay côn/ Moto</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Minh Tâm</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Exciter 2016 Full Xe Zin</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">03/12/2022</div>
+                            <div class="oto-product-content-giatien">25.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/a0b3cd88-9fee-4ad1-acf8-9aacaef45268_thumbnail_385x288_F6B0EEAB-10D4-4B90-B5DC-9140A712459Cex2016.jpeg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Yamaha</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2016</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe cũ</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>Exciter</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay côn/ Moto</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Khang</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Kawasaki ZX10R 2020 Brand New</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">22/11/2022</div>
+                            <div class="oto-product-content-giatien">710.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/f1919671-ba2f-405f-a85b-146564a49766_thumbnail_385x288_302984309_1732001737192610_5304532479015033580_nzx10r2020.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Kawasaki</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2020</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe mới</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>Ninja</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay côn/ Moto</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Văn Motor PKL</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Xe Cá Nhân SH125i Máy Ý Màu Trắng Biển Hà Nội</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">20/11/2022</div>
+                            <div class="oto-product-content-giatien">110.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/sh125.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Hà Nội</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Honda</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2010</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe cũ</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>SH</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay ga</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Thu Cao</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">   
+                        <div class="oto-product-content-tenxe"><a href="#">Kawasaki Z100 ABS 2021 Xe Mới Chính Hãng</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">19/11/2022</div>
+                            <div class="oto-product-content-giatien">408.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/802bb49c-90cc-463e-8f5c-52e0dc74f8d6_thumbnail_385x288_0CD5C01E-E990-4B35-8FFF-6E29D61961FDz10002021.jpeg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Hà Nội</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Kawasaki</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2021</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe mới</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>Z1000</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay côn/ Moto</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Quang Ken</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">Honda Lead 2019 Full Smartkey Xe Đi Được 8000km</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">15/11/2022</div>
+                            <div class="oto-product-content-giatien">37.200.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/2ce1726b-6868-48b7-9675-64b2b47ea4de_thumbnail_385x288_1lead2019.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Honda</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2019</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe cũ</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>Lead</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay ga</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Lê Linh</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oto-product-content-car">
+                        <div class="oto-product-content-tenxe"><a href="#">SH Ý 150i Nhập Khẩu Hải Quan</a></div>
+                        <div class="oto-product-content-ngaydang-giatien">
+                            <div class="oto-product-content-ngaydang">05/09/2022</div>
+                            <div class="oto-product-content-giatien">135.000.000&nbsp;<p>đ</p></div>
+                        </div>
+                        <div class="oto-product-content-thongtin">
+                            <div class="oto-product-content-thongtin-img">
+                                <img src="images/sh150i.jpg" alt="">
+                            </div>
+                            <div class="oto-product-content-thongtin-chitiet">
+                                <div class="oto-product-content-thongtin-chitiet-xe">
+                                    <div class="oto-product-content-thongtin-chitiet-xe1">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/diadiem.png" alt=""><p>Tp. HCM</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/hangxe.png" alt=""><p>Honda</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Calendar.webp" alt=""><p>2012</p></div>
+                                    </div>
+                                    <div class="oto-product-content-thongtin-chitiet-xe2">
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/odo1.png" alt=""><p>Xe mới</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/Model.webp" alt=""><p>SH</p></div>
+                                        <div class="oto-product-content-thongtin-chitiet-xe-info"><img src="images/motor.png" alt=""><p>Tay ga</p></div>
+                                    </div>
+                                </div>
+                                <div class="oto-product-content-thongtin-chitiet-nguoiban">
+                                    <div class="oto-product-content-thongtin-nguoiban"><img src="images/nguoiban.png" alt=""><p>Xe máy nhập khẩu</p></div>
+                                    <div class="oto-product-content-thongtin-lienhe">
+                                        <div class="oto-product-content-thongtin-lienhe-luutin"><img src="images/hangxe.png" alt=""><p>Lưu tin</p></div>
+                                        <div class="oto-product-content-thongtin-lienhe-call"><p>Liên hệ</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="oto-product-pagenumber">
+                    <div class="oto-product-pagenumber-Page">
+                            <div><p><<</p></div>
+                            <div><p><</p></div>
+                            <div><p>1</p></div>
+                            <div><p>2</p></div>
+                            <div><p>3</p></div>
+                            <div><p>4</p></div>
+                            <div><p>...</p></div>
+                            <div><p>14</p></div>
+                            <div><p>15</p></div>
+                            <div><p>></p></div>
+                            <div><p>>></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-content-info">
+                    <div><img src="images/logo.webp" alt=""></div>
+                    <div class="footer-content-info-xt"><p class="title-footer-info">CTY TNHH TMDV Xe Tốt Việt Nam</p></div>
+                    <div class="footer-content-info-xt"><img src="images/diachi.png" alt="diadiem"><p>Lầu 7, Tòa nhà Vĩnh Tường, đường sô 5, Tân Tạo A, Bình Tân, HCM</p></div>
+                    <div class="footer-content-info-xt"><img src="images/dienthoai.png" alt="phone"><p>0387167xxx</p></div>
+                    <div class="footer-content-info-xt"><img src="images/mail.png" alt=""><p>email@xetot.com</p></div>
+                </div>
+                <div class="footer-content-info">
+                    <div class="footer-content-info-between">
+                        <div class="footer-content-info-xt-between">
+                            <div><p class="title-footer-info">Hỗ trợ khách hàng</p></div>
+                            <div class="footer-content-info-xt-between-list">
+                                <div>Quy chế hoạt động</div>
+                                <div>Trợ giúp</div>
+                                <div>Cơ chế giải quyết tranh chấp</div>
+                                <div>Chính sách bảo mật</div>
+                            </div>
+                        </div>
+                        <div class="footer-content-info-xt-between">
+                            <div><p class="title-footer-info">Về chúng tôi</p></div>
+                            <div class="footer-content-info-xt-between-list">
+                                <div>Giới thiệu</div>
+                                <div>Tuyển dụng</div>
+                                <div>Blog xe tốt</div>
+                                <div>Thông tin liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-info">
+                    <div><p class="title-footer-info">Chứng nhận</p></div>
+                    <div class="footer-content-info-images"><img src="images/7e3a900d-a46f-4880-b8ad-2c802b78daf4_chogiayphep.webp" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

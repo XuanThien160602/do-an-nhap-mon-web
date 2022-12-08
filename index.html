@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xe Tốt - Mua Bán Xe Giá Tốt</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-header"><img src="images/logo.webp" alt=""></div>
+            <div class="menu-header">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png" alt=""><p>Trang chủ</p></a></li>
+                    <li><a href="muaoto.html"><img src="images/car.png" alt=""><p>Mua Ô Tô</p></a></li>
+                    <li><a href="muaxemay.html"><img src="images/motorbike.png" alt=""><p>Mua Xe Máy</p></a></li>
+                    <li><a href="muaxetai.html"><img src="images/trucks.png" alt=""><p>Mua Xe Tải</p></a></li>
+                    <li><a href="taikhoan.html"><img src="images/user.jfif" alt=""><p>Tài Khoản</p></a></li>
+                    <li><a href="dangbanxe.html" ><img src="images/banxe.jpg" alt=""><p class="xt-banxe">Đăng Bán Xe</p></a></li>
+                    <li><a href="gioithieu.html"><img src="" alt=""><p class="xt-gioithieu">Giới thiệu</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search">
+                <div><input type="text" placeholder="Tìm tên, hãng, dòng xe,..."></div>
+                <div>
+                    <select name="" id="">
+                        <option value="" selected="selected">Toàn quốc</option>
+                        <option value="ha-noi">Hà Nội</option>
+                        <option value="ho-chi-minh">Hồ Chí Minh</option>
+                        <option value="an-giang">An Giang</option>
+                        <option value="ba-ria---vung-tau">Bà Rịa - Vũng Tàu</option>
+                        <option value="bac-giang">Bắc Giang</option>
+                        <option value="bac-kan">Bắc Kạn</option>
+                        <option value="bac-lieu">Bạc Liêu</option>
+                        <option value="bac-ninh">Bắc Ninh</option>
+                        <option value="ben-tre">Bến Tre</option>
+                        <option value="binh-dinh">Bình Định</option>
+                        <option value="binh-duong">Bình Dương</option>
+                        <option value="binh-phuoc">Bình Phước</option>
+                        <option value="binh-thuan">Bình Thuận</option>
+                        <option value="ca-mau">Cà Mau</option>
+                        <option value="can-tho">Cần Thơ</option>
+                        <option value="cao-bang">Cao Bằng</option>
+                        <option value="da-nang">Đà Nẵng</option>
+                        <option value="dak-lak">Đắk Lắk</option>
+                        <option value="dak-nong">Đắk Nông</option>
+                        <option value="dien-bien">Điên Biên</option>
+                        <option value="dong-nai">Đồng Nai</option>
+                        <option value="dong-thap">Đồng Tháp</option>
+                        <option value="gia-lai">Gia Lai</option>
+                        <option value="ha-giang">Hà Giang</option>
+                        <option value="ha-nam">Hà Nam</option>
+                        <option value="ha-tinh">Hà Tỉnh</option>
+                        <option value="hai-duong">Hải Dương</option>
+                        <option value="hai-phong">Hải Phong</option>
+                        <option value="hau-giang">Hậu Giang</option>
+                        <option value="hoa-binh">Hòa Bình</option>
+                        <option value="hung-yen">Hưng Yên</option>
+                        <option value="khanh-hoa">Khánh Hòa</option>
+                        <option value="kien-giang">Kiên Giang</option>
+                        <option value="kon-tum">Kon Tum</option>
+                        <option value="lai-chau">Lai Châu</option>
+                        <option value="lam-dong">Lâm Đồng</option>
+                        <option value="lang-son">Lạng Sơn</option>
+                        <option value="lao-cai">Lào Cai</option>
+                        <option value="long-an">Long An</option>
+                        <option value="nam-dinh">Nam Định</option>
+                        <option value="nghe-an">Nghệ An</option>
+                        <option value="ninh-binh">Ninh Bình</option>
+                        <option value="ninh-thuan">Ninh Thuận</option>
+                        <option value="phu-tho">Phú Thọ</option>
+                        <option value="phu-yen">Phú Yên</option>
+                        <option value="quang-binh">Quảng Bình</option>
+                        <option value="quang-nam">Quảng Nam</option>
+                        <option value="quang-ngai">Quảng Ngãi</option>
+                        <option value="quang-ninh">Quảng Ninh</option>
+                        <option value="quang-tri">Quảng Trị</option>
+                        <option value="soc-trang">Sóc Trăng</option>
+                        <option value="son-la">Sơn La</option>
+                        <option value="tay-ninh">Tây Ninh</option>
+                        <option value="thai-binh">Thái Bình</option>
+                        <option value="thai-nguyen">Thái Nguyên</option>
+                        <option value="thanh-hoa">Thanh Hóa</option>
+                        <option value="thua-thien-hue">Thừa Thiên Huế</option>
+                        <option value="tien-giang">Tiền Giang</option>
+                        <option value="tra-vinh">Trà Vinh</option>
+                        <option value="tuyen-quang">Tuyên Quang</option>
+                        <option value="vinh-long">Vĩnh Long</option>
+                        <option value="vinh-phuc">Vĩnh Phúc</option>
+                        <option value="yen-bai">Yên Bái</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="" id="">
+                        <option value="" selected="selected">Tất cả: Ô Tô, Xe Máy, Xe Tải,...</option>
+                        <option value="">Ô Tô</option>
+                        <option value="">Xe Máy</option>
+                        <option value="">Xa Tải</option>
+                    </select>
+                </div>
+                <div><input type="button" value="Tìm" id="button-search"></div>
+            </div>   
+        </div>
+        <div class="content">
+            <div><h2>Tin rao mới nhất</h2></div>
+            <div class="content-new-product">
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/KiaSorentoPremium.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Kia Sorento Dầu Premium Trắng Xe Sẵn Giao Ngay</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;<p>Kia</p></div>
+                                    <div class="product-paremeters-info"><img src="images/rell.png" alt="">&nbsp;&nbsp;<p>Tự động</p></div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;<p>Sorento</p></div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;<p>2022</p></div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>1.329.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/thaco3tanisuzu.webp" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Xe Tải THACO 3 Tấn Động Cơ Isuzu Thế Hệ Mới</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Thaco</div>
+                                    <div class="product-paremeters-info"><img src="images/Power.webp" alt="">&nbsp;&nbsp;Dầu</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;3 tấn</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2022</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>419.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/fortune.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Toyota Fortuner 2 4MT Đã Qua Sử Dụng Chính Hãng Toyota</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Toyota</div>
+                                    <div class="product-paremeters-info"> <img src="images/rell.png" alt="">&nbsp;&nbsp;Số sàn</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Fortuner</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2020</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>990.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/cb1000.jpeg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Honda CB1100 RS 2019 Xe Mới Chính Hãng</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Honda</div>
+                                    <div class="product-paremeters-info"><img src="images/loaixemay.png" alt="">&nbsp;&nbsp;Tay côn/Moto</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Loại khác</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2019</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>222.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/z1000.jpeg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Kawasaki Z1000 ABS 2021 Xe Mới Đẹp</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Kawasaki</div>
+                                    <div class="product-paremeters-info"><img src="images/loaixemay.png" alt="">&nbsp;&nbsp;Tay côn/Moto</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Z1000</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2021</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>249.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/6t82m2.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Xe Tải 6 Tấn 8 Thùng Dài 6m2 2022 Ưu Đãi Thuế Trước Bạ</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Thaco</div>
+                                    <div class="product-paremeters-info"><img src="images/Power.webp" alt="">&nbsp;&nbsp;Dầu</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;7 tấn</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2022</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>565.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="content-product-button"><input type="button" value="XEM TẤT CẢ >"></div> -->
+                <div class="content-product-button"><a href="#">XEM THÊM ></a></div>
+            </div>
+        </div>
+        <div class="search-product">
+            <div><h2>Tìm nhanh theo hãng xe</h2></div>
+            <marquee direction="left" scrollamount="5" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate">
+            <div class="search-product-logo">
+                <div class="search-product-logo1">
+                    <div><img src="images/logo/0217498a-2a81-4357-9fb5-63043360490f_mitsubishi-logo.webp" alt="mitsubishi"></div>
+                    <div><img src="images/logo/07564b91-63fe-4ddb-b585-cfcd443a784c_lexus-logo.webp" alt="lexus"></div>
+                    <div><img src="images/logo/09cb79d6-7312-4854-986e-63c33e7e17b3_land-rover-logo.webp" alt="landrover"></div>
+                    <div><img src="images/logo/177c14d4-6e9c-425a-beff-d50dda51b7a0_mazda-logo.webp" alt="mazda"></div>
+                    <div><img src="images/logo/1b3f2d93-6033-4630-a338-fac6eceda3e3_ford-logo.webp" alt="ford"></div>
+                    <div><img src="images/logo/1d7a0788-a693-4c86-bceb-cdc22473e5a0_peugeot-logo.webp" alt="peugeot"></div>
+                    <div><img src="images/logo/27ba35bb-6a43-41d6-adb1-aa243ab3c361_lamborghini-logo.webp" alt="lamborghini"></div>
+                    <div><img src="images/logo/295305f4-87a8-43f2-88b8-fa6818b97878_dongfeng.webp" alt="dongfeng"></div>
+                    <div><img src="images/logo/35a38e28-3a34-4733-82db-5cded4641b07_bmw-logo.webp" alt="bmw"></div>
+                    <div><img src="images/logo/3d07fbec-cb64-40b5-aadb-eaa1f4c71d8d_rolls-royce-logo.webp" alt="rollroyce"></div>
+                    <div><img src="images/logo/4b12b0ff-a0e1-4cca-a8ff-928811192927_chevrolet.webp" alt="chervolet"></div>
+                    <div><img src="images/logo/5813ef8d-27ed-40b7-95c9-f04dde9b49bf_mg-logo.webp" alt="mg"></div>
+                    <div><img src="images/logo/61809513-ca97-47bd-b320-05c355f2d740_subaru-logo.webp" alt="subaru"></div>
+                    <div><img src="images/logo/6ae45680-72da-40ba-a970-d9377df6c455_kia-logo.webp" alt="kia"></div>
+                    <div><img src="images/logo/70a20889-dcbf-412c-9eb1-8f6173f2106c_jeep-logo.webp" alt="jeep"></div>
+                    <div><img src="images/logo/70b299f8-9a66-4672-804d-f1aaeee9bc1a_jaguar-logo.webp" alt="jaguar"></div>
+                    <div><img src="images/logo/7d6062c2-7e7f-43bd-9427-0a3cbcfd58ed_isuzu-logo.webp" alt="isuzu"></div>
+                </div>
+                <div class="search-product-logo1">
+                    <div><img src="images/logo/80ac7528-aea1-496f-89b4-ba90d0ea8eff_ram.webp" alt="ram"></div>
+                    <div><img src="images/logo/8776b20d-b8da-49ba-bf98-fac1221f4ea1_mercedes-benz-logo.webp" alt="marcedes"></div>
+                    <div><img src="images/logo/96be61f7-fc5a-4664-be89-1ac89d6961d9_volkswagen-logo.webp" alt="volkswagen"></div>
+                    <div><img src="images/logo/9f09e7be-04f5-43c3-973a-4448fe0c6781_vinfast-logo.webp" alt="vinfast"></div>
+                    <div><img src="images/logo/9fd30b0d-40db-4e4a-9f2f-66cb41ae2ce0_suzuki-logo.webp" alt="suzuki"></div>
+                    <div><img src="images/logo/ad06b166-90cb-47c0-ad15-8ac2b1b9cfb1_thumb-lincoln-logo.webp" alt="thumblincoln"></div>
+                    <div><img src="images/logo/b9ed3ff3-4a47-495e-bae8-ed5bbf7d3284_mini-logo.webp" alt="mini"></div>
+                    <div><img src="images/logo/bafcaaf1-a3a0-46f2-a07e-9f876bfc3b56_porsche-logo.webp" alt="porsche"></div>
+                    <div><img src="images/logo/bc7d84af-48f0-48c3-86d2-aacf4f832a0d_nissan-logo.webp" alt="nissan"></div>
+                    <div><img src="images/logo/bc9a47f5-4193-4ca9-8486-58aa6535b3b1_ferrari-logo.webp" alt="ferrari"></div>
+                    <div><img src="images/logo/bd7b7e85-f627-4c45-a4de-27133d3a848a_bentley-logo.webp" alt="bentley"></div>
+                    <div><img src="images/logo/c72c30b8-10c3-479a-955c-2342a62e666e_audi-logo.webp" alt="audi"></div>
+                    <div><img src="images/logo/cab5979d-e42e-4e3e-9203-28cc75ef90d2_honda-logo.webp" alt="honda"></div>
+                    <div><img src="images/logo/de129594-eee8-46f6-80f4-8f5a793d6639_hyundai-logo.webp" alt="hyundai"></div>
+                    <div><img src="images/logo/deee9dda-f52e-4f58-8aca-59fcb300da5e_volvo-logo.webp" alt="volvo"></div>
+                    <div><img src="images/logo/eabe05a6-c6e0-49ee-8486-a431a6e3beff_maserati-logo.webp" alt="maserati"></div>
+                    <div><img src="images/logo/f3e8465f-93d7-45a7-b7ec-467de01894db_toyota-logo.webp" alt="toyota"></div>
+                </div>
+            </div>
+            </marquee>
+        </div>
+        <div class="product">
+            <div><h2>Sản phẩm đang bán</h2></div>
+            <div class="mortobike-product">
+                <div><h3 class="title-product">Xe máy</h3></div>
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/harleydavison114ciabs.png" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Harley Davison Fatboy 114Ci ABS 2020 Chính Hãng</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Harley Davison</div>
+                                    <div class="product-paremeters-info"><img src="images/loaixemay.png" alt="">&nbsp;&nbsp;Tay côn/Moto</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Khác</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2019</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>629.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/ducati899.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Ducati 899 Panigale 2020 Bản Mới</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Ducati</div>
+                                    <div class="product-paremeters-info"><img src="images/loaixemay.png" alt="">&nbsp;&nbsp;Tay côn/Moto</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;899 Panigale</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2020</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>288.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/honda-shadow-phantom-750.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Honda Shadow Phantom 750 2020</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Honda</div>
+                                    <div class="product-paremeters-info"><img src="images/loaixemay.png" alt="">&nbsp;&nbsp;Tay côn/Moto</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Khác</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2021</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>269.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/triumph rocket3.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Triumph Rocket 3R Xe Chính Hãng</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Triumpg</div>
+                                    <div class="product-paremeters-info"><img src="images/loaixemay.png" alt="">&nbsp;&nbsp;Tay côn/Moto</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;Rocket 3</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2022</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>569.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-product-button"><a href="muaxemay.html">XEM THÊM ></a></div>
+            </div>
+            <div class="car-product">
+                <div><h3 class="title-product">Xe Ô Tô</h3></div>
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/KiaRondo.jpeg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Kia Rondo Máy Xăng Tự Động 2018 46000km</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Kia</div>
+                                    <div class="product-paremeters-info"><img src="images/rell.png" alt="">&nbsp;&nbsp;Tự động</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Rondo</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2018</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>495.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/BentleyFlyingSpur.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Bentley Flying Spur V8 Frist Edition</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Bentley</div>
+                                    <div class="product-paremeters-info"><img src="images/rell.png" alt="">&nbsp;&nbsp;Tự động</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Flying Spur</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2021</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>19.900.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/ChevorletCaptiva.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Chevorlet Captica LTZ 24AT 2018</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Chevorlet</div>
+                                    <div class="product-paremeters-info"><img src="images/rell.png" alt="">&nbsp;&nbsp;Tự động</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;Captiva</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2018</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>576.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/MercedesEClass.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Mercedes E Class 20000km</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Mercedes</div>
+                                    <div class="product-paremeters-info"><img src="images/loaixemay.png" alt="">&nbsp;&nbsp;Tự động</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/Model.webp" alt="">&nbsp;&nbsp;E Class</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2021</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>2.700.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-product-button"><a href="muaoto.html">XEM THÊM ></a></div>
+            </div>
+            <div class="trucksproduct">
+                <div><h3 class="title-product">Xe Tải</h3></div>
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/MitsubishiFuso.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Xe tải 6t5 Mitsubishi Fuso Thùng 6m1 Đời 2022</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Mitsubishi</div>
+                                    <div class="product-paremeters-info"><img src="images/Power.webp" alt="">&nbsp;&nbsp;Dầu</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;6 tấn</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2022</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>775.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/IsuzuNQR550.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Xe Tải Isuzu NQR550 Tải 5.5 Tấn</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Isuzu</div>
+                                    <div class="product-paremeters-info"><img src="images/Power.webp" alt="">&nbsp;&nbsp;Dầu</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;5 tấn</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2022</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>765.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-product">
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/Veamvt751.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Xe Tải VEAM VT751 Thùng 6m1 Máy Cơ Hyundai</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Veam</div>
+                                    <div class="product-paremeters-info"><img src="images/Power.webp" alt="">&nbsp;&nbsp;Dầu</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;7 tấn</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2017</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>490.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-img"><img src="images/thacoFrontierTf2800.jpg" alt=""></div>
+                        <div class="product-details">
+                            <div class="product-name">Thaco Frontier Tf2800 Thùng Kín 19990kg</div>
+                            <div class="product-parameters">
+                                <div class="product-parameters-1">
+                                    <div class="product-paremeters-info"><img src="images/hangxe.png" alt="">&nbsp;&nbsp;Thaco</div>
+                                    <div class="product-paremeters-info"><img src="images/Power.webp" alt="">&nbsp;&nbsp;Dầu</div>
+                                </div>
+                                <div class="product-parameters-2">
+                                    <div class="product-paremeters-info"><img src="images/taitrong.webp" alt="">&nbsp;&nbsp;2 tấn</div>
+                                    <div class="product-paremeters-info"><img src="images/Calendar.webp" alt="">&nbsp;&nbsp;2022</div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="product-price"><h4>351.000.000</h4>&nbsp;<p>đ</p></div>
+                                <div class="contact-call">Liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-product-button"><a href="muaxetai.html">XEM THÊM ></a></div>
+            </div>
+        </div>
+        <div class="news">
+            <div><h2>Tin tức</h2></div>
+            <div class="new-product">
+                <div class="product-info">
+                    <div class="product-img"><img src="images/gia-xe-toyota-innova-2023-all-new-giaxehoi-vn-12-300x225.jpg" alt=""></div>
+                    <div class="product-details">
+                        <div class="product-name">Toyota Innova 2023 thế hệ mới ra mắt, sớm về Việt Nam?</div>
+                        <div>
+                            <p class="button-news">Toyota Innova 2023 thế hệ mới đã chính thức ra mắt toàn cầu. Xe được đánh giá cao với màn... <input type="button" value="Đọc thêm"></p>
+                        </div>
+                        <div>Ngày đăng: 27/11/2022</div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-img"><img src="images/ra-mat-xe-kia-carens-2023-giaxehoi-vn-1-800x465-1-300x174.jpg" alt=""></div>
+                    <div class="product-details">
+                        <div class="product-name">Giới thiệu Line-Up SUV của KIA tại Việt Nam năm 2023</div>
+                        <div>
+                            <p class="button-news">Hãy cùng điểm qua những mẫu SUV đáng chú ý trong dải sản phẩm (line-up) vừa được hoàn thiện... <input type="button" value="Đọc thêm"></p>
+                        </div>
+                        <div>Ngày đăng: 24/11/2022</div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-product">
+                <div class="product-info">
+                    <div class="product-img"><img src="images/top-10-xe-ban-chay-nhat-102022-giaxehoi-vn-6-300x169.jpeg" alt=""></div>
+                    <div class="product-details">
+                        <div class="product-name">Top 10 xe bán chạy nhất tháng 10/2022: Ranger lên ngôi, Seltos tái xuất</div>
+                        <div>
+                            <p class="button-news">Ford Ranger bứt phá ngoạn mục với ngôi vị dẫn đầu thị trường, trong khi Ford Everest, Mazda 3... <input type="button" value="Đọc thêm"></p>
+                        </div>
+                        <div>Ngày đăng: 13/11/2022</div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-img"><img src="images/xe-ford-2023-sap-ban-3-300x200.jpg" alt=""></div>
+                    <div class="product-details">
+                        <div class="product-name">Các mẫu xe Ford 2023 sắp bán: 4 phân khúc HOT tại Việt Nam</div>
+                        <div>
+                            <p class="button-news">Ford Ranger, Everest, Ranger Raptor thế hệ mới, Territory là 4 cái tên dụ kiến được bán tại... <input type="button" value="Đọc thêm"></p>
+                        </div>
+                        <div>Ngày đăng: 14/10/2022</div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-product">
+                <div class="product-info">
+                    <div class="product-img"><img src="images/top-xe-ban-chay-09-2022-giaxehoi-vn-1-300x169.jpeg" alt=""></div>
+                    <div class="product-details">
+                        <div class="product-name">Top 10 xe bán chạy nhất tháng 9/2022: Cuộc chơi của Hyundai và Toyota</div>
+                        <div>
+                            <p class="button-news">Có đến 4 đại diện của Hyundai góp mặt trong danh sách này, trong khi Toyota cũng sở hữu 3 tên... <input type="button" value="Đọc thêm"></p>
+                        </div>
+                        <div>Ngày đăng: 12/10/2022</div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-img"><img src="images/danh-gia-xe-maserati-grecale-2023-blog-xetot-com-13-300x200.jpg" alt=""></div>
+                    <div class="product-details">
+                        <div class="product-name">Đánh giá xe Maserati Grecale 2023: Toát lên nét đặc trưng của vùng biển Đại Trung Hải</div>
+                        <div>
+                            <p class="button-news">Ngày 22/03, Maserati Grecale 2023 đã chính thức ra mắt toàn cầu với 3 phiên bản: GT, Modena và... <input type="button" value="Đọc thêm"></p>
+                        </div>
+                        <div>Ngày đăng: 25/09/2022</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="content-product-button"><input type="button" value="XEM TẤT CẢ >"></div> -->
+            <div class="content-product-button"><a href="#">XEM THÊM ></a></div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-content-info">
+                    <div><img src="images/logo.webp" alt=""></div>
+                    <div class="footer-content-info-xt"><p class="title-footer-info">CTY TNHH TMDV Xe Tốt Việt Nam</p></div>
+                    <div class="footer-content-info-xt"><img src="images/diachi.png" alt="diadiem"><p>Lầu 7, Tòa nhà Vĩnh Tường, đường sô 5, Tân Tạo A, Bình Tân, HCM</p></div>
+                    <div class="footer-content-info-xt"><img src="images/dienthoai.png" alt="phone"><p>0387167xxx</p></div>
+                    <div class="footer-content-info-xt"><img src="images/mail.png" alt=""><p>email@xetot.com</p></div>
+                </div>
+                <div class="footer-content-info">
+                    <div class="footer-content-info-between">
+                        <div class="footer-content-info-xt-between">
+                            <div><p class="title-footer-info">Hỗ trợ khách hàng</p></div>
+                            <div class="footer-content-info-xt-between-list">
+                                <div>Quy chế hoạt động</div>
+                                <div>Trợ giúp</div>
+                                <div>Cơ chế giải quyết tranh chấp</div>
+                                <div>Chính sách bảo mật</div>
+                            </div>
+                        </div>
+                        <div class="footer-content-info-xt-between">
+                            <div><p class="title-footer-info">Về chúng tôi</p></div>
+                            <div class="footer-content-info-xt-between-list">
+                                <div>Giới thiệu</div>
+                                <div>Tuyển dụng</div>
+                                <div>Blog xe tốt</div>
+                                <div>Thông tin liên hệ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-info">
+                    <div><p class="title-footer-info">Chứng nhận</p></div>
+                    <div class="footer-content-info-images"><img src="images/7e3a900d-a46f-4880-b8ad-2c802b78daf4_chogiayphep.webp" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
