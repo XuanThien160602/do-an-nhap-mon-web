@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xe Tốt - Mua Bán Xe Giá Tốt</title>
     <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div class="container">
@@ -106,7 +108,7 @@
             </div>   
         </div>
         <div class="content">
-            <div><h2>Tin rao mới nhất</h2></div>
+            <div><h2 class="titleh2">Tin rao mới nhất</h2></div>
             <div class="content-new-product">
                 <div class="new-product">
                     <div class="product-info">
@@ -239,7 +241,7 @@
             </div>
         </div>
         <div class="search-product">
-            <div><h2>Tìm nhanh theo hãng xe</h2></div>
+            <div><h2 class="titleh2">Tìm nhanh theo hãng xe</h2></div>
             <marquee direction="left" scrollamount="5" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()" behavior="alternate">
             <div class="search-product-logo">
                 <div class="search-product-logo1">
@@ -284,7 +286,7 @@
             </marquee>
         </div>
         <div class="product">
-            <div><h2>Sản phẩm đang bán</h2></div>
+            <div><h2 class="titleh2">Sản phẩm đang bán</h2></div>
             <div class="mortobike-product">
                 <div><h3 class="title-product">Xe máy</h3></div>
                 <div class="new-product">
@@ -551,7 +553,7 @@
             </div>
         </div>
         <div class="news">
-            <div><h2>Tin tức</h2></div>
+            <div><h2 class="titleh2">Tin tức</h2></div>
             <div class="new-product">
                 <div class="product-info">
                     <div class="product-img"><img src="images/gia-xe-toyota-innova-2023-all-new-giaxehoi-vn-12-300x225.jpg" alt=""></div>
@@ -619,7 +621,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="content-product-button"><input type="button" value="XEM TẤT CẢ >"></div> -->
+            
             <div class="content-product-button"><a href="#">XEM THÊM ></a></div>
         </div>
         <div>
@@ -681,5 +683,18 @@
             </div>
         </div>
     </div>
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+         });
+
+         ScrollReveal().reveal('.header', { delay: 500, origin: 'left' });
+         ScrollReveal().reveal('.search-container', { delay: 500, origin: 'top' });
+         ScrollReveal().reveal('.titleh2, .product-info, .content-product-button, .search-product-logo, .title-product, .footer-content', { delay: 500, origin: 'bottom' });
+
+    </script>
 </body>
 </html>

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới Thiệu Đồ Án</title>
     <link rel="stylesheet" href="./css.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div class="container">
@@ -38,6 +39,7 @@
                         <div class="gioithieu-noidung-text-title">Các chức năng đã thực hiện</div>
                             <p>- Hiệu ứng đổi màu khi rê chuột trên các thành phần</p>
                             <p>- Hiệu ứng phóng to các phần tử khi rê chuột</p>
+                            <p>- Hiệu ứng xuất hiện các phần tử khi được cuộn chuột đến</p>
                             <p>- Hiệu ứng chuyển động các phần tử</p>
                             <p>- Nút chuyển về đầu trang</p>
                             <p>- Các trang được liên kết với nhau</p>
@@ -45,7 +47,7 @@
                     </div>
                 </div>
                 <div class="gioithieu-noidung-1">
-                    <div class="gioithieu-noidung-text">
+                    <div class="gioithieu-noidung-text1">
                         <div class="gioithieu-noidung-text-title">Mục đích đề tài</div>
                         <p>- Áp dụng các kiến thức đã học để xây dựng giao diện một Website mua bán các loại xe mới,cũ</p>
                         <p>- Tạo ra một trang mua bán các loại xe mới, cũ</p>
@@ -58,6 +60,42 @@
                 </div>
             </div>
         </div>
+        <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Về đầu trang</button>
+            <script>
+                let mybutton = document.getElementById("myBtn");
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+                
+        </div>
     </div>
+
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+         });
+
+         ScrollReveal().reveal('.header', { delay: 500, origin: 'left' });
+         ScrollReveal().reveal('.gioithieu-noidung-img, .gioithieu-noidung-text', { delay: 500, origin: 'left' });
+         ScrollReveal().reveal('.gioithieu-noidung-img1, .gioithieu-noidung-text1', { delay: 500, origin: 'right' });
+         ScrollReveal().reveal('.gioithieu-content-header', { delay: 500, origin: 'bottom' });
+
+    </script>
 </body>
 </html>
