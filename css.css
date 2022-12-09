@@ -878,8 +878,22 @@ body{
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
-  }
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555;
-  }
+}
+.thongtinsinhvien{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: green;
+}
+.thongtinsinhvien:hover,.thongtinsinhvien:active,.thongtinsinhvien:hover{
+    color: red;
+    text-decoration: underline;
+}
