@@ -424,19 +424,23 @@ body{
     margin: 50px 105px;
 }
 .oto-product-logo-search{
-    width: 4800px;
+    width: 4900px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    transition: all .4s ease-in-out;
 }
 .oto-product-logo-search>div{
-        border-radius: 10px;
-        height: 130px;
-        width: 130px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid green;
+    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+}
+.oto-product-logo-search>div:hover{
+    transform: scale(1.1);
 }
 .oto-product-logo-search-img>img{
     height: 100px;
@@ -628,10 +632,11 @@ body{
     border-bottom-right-radius: 5px;
 }
 .xemay-product-logo-search{
-    width: 2400px;
+    width: 2500px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    transition: all .4s ease-in-out;
 }
 .xemay-product-logo-search>div{
     border-radius: 10px;
@@ -641,6 +646,9 @@ body{
     flex-direction: column;
     align-items: center;
     border: 1px solid green;
+}
+.xemay-product-logo-search>div:hover{
+    transform:scale(1.1);
 }
 .xemay-product-logo-search-img>img{
     height: 100px;
@@ -658,6 +666,7 @@ body{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    transition: all .4s ease-in-out;
 }
 .xetai-product-logo-search>div{
     border-radius: 10px;
@@ -667,6 +676,9 @@ body{
     flex-direction: column;
     align-items: center;
     border: 1px solid green;
+}
+.xetai-product-logo-search>div:hover{
+    transform: scale(1.1);
 }
 .xetai-product-logo-search-img>img{
     height: 100px;
@@ -781,10 +793,16 @@ body{
 /* ////////////////////////////////////////// */
 .gioithieu-content{
     border-top: 1px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .gioithieu-content-header{
-    background: url(images/background-gioithieu.jpg) no-repeat;
+    background: url(images/background-gioithieu.jpg) no-repeat ;
+    background-size: cover;
     height: 538px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -792,4 +810,48 @@ body{
 }
 .gioithieu-content-header>div{
     font-size: 60px;
+}
+.gioithieu-noidung{
+    display: flex;
+    width: 80%;
+    margin-top: 30px;
+}
+.gioithieu-noidung-1{
+    width: 50%;
+}
+.gioithieu-noidung-img{
+    padding-left: 30px;    
+}
+.gioithieu-noidung-img>div>img{
+    height: 168px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+.gioithieu-noidung-img1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gioithieu-noidung-img1>div>img{
+    height: 168px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+.gioithieu-noidung-text>p{
+    font-size: 20px;
+    margin: 20px;
+    color: gray;
+}
+.gioithieu-noidung-text-title{
+    color: forestgreen;
+    font-weight: bolder;
+    font-size: 25px;
 }
