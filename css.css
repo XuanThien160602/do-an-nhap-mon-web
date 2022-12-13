@@ -1156,3 +1156,24 @@ body{
     text-decoration: none;
     color: green;
 }
+/* ////////////////////////////// */
+.menulab{
+    margin: 20px 105px;
+    height: auto;
+    width: auto;
+}
+.menulab-tittle{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.labthuchanh{
+    text-decoration: none;
+    color: black;
+}
+.menulab-danhsach>div>p{
+    font-weight: bolder;
+    font-size: 15px;
+}
+.labthuchanh:hover{
+    color: red;
+}
